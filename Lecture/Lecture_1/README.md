@@ -1,9 +1,9 @@
 ## Learning Objective
 After this lecture you should be able to:
-> explain homogeneous coordinates
+> 1. explain homogeneous coordinates
 
-> convert to and from homogeneous coordinates
+> 2. convert to and from homogeneous coordinates
 
-> perform relevant coordinate transformations
+> 3. perform relevant coordinate transformations
 
-> explain the pinhole camera model
+> 4. explain the pinhole camera model
