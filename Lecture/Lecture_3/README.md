@@ -42,6 +42,7 @@ Here's a brief overview of how to derive and apply the fundamental matrix:
 
 ### 5. Explain the pros and cons of using a linear algorithm
 > The linear algorithm for triangulation is a simple and fast method to compute the 3D position of a point in space from two or more image correspondences. However, it has both pros and cons, which are as follows:
+
 > Pros:
 > 1. Simplicity: The linear algorithm is easy to implement and understand. It involves only basic linear algebraic operations and can be applied to a wide range of problems.
 > 2. Speed: The linear algorithm is computationally efficient compared to other methods that involve non-linear optimization or iterative techniques. The solution can be obtained in real-time for real-world applications.
