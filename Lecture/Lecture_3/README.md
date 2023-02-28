@@ -9,7 +9,15 @@ The epipolar line is important because it helps to reduce the search space for f
 In summary, the epipolar line is the line of intersection between the plane of the image and the plane that passes through the camera center and a corresponding point in the other image. It is computed from the fundamental matrix and helps to reduce the search space for finding corresponding points in two images.
 
 ### 2. Derive and apply the fundamental matrix in computer vision
-> There are various methods to compensate for lens distortion in images, including using correction algorithms based on polynomial models of the distortion, using look-up tables, or using machine learning methods. One common method is to model the distortion using a radial distortion model, where the distortion is represented as a polynomial function of the distance from the center of the image. This polynomial can then be inverted to correct the distorted image.
+> The fundamental matrix is a mathematical concept in computer vision used to describe the relationship between two views of a scene in a stereo camera setup. The fundamental matrix can be used for various applications, such as stereo rectification, stereo matching, and camera calibration.\
+Here's a brief overview of how to derive and apply the fundamental matrix:\
+> 1. Image point correspondences: Given two images of the same scene, the first step is to find corresponding points between the two images. This can be done manually or automatically using feature extraction and matching techniques.\
+> 2. Normalization: Next, the image points need to be normalized to improve the accuracy of the fundamental matrix estimation. This involves scaling and translating the points to a common coordinate system.\
+> 3. Fundamental matrix estimation: Once the correspondences are normalized, the fundamental matrix can be estimated using various techniques, such as the eight-point algorithm, normalized eight-point algorithm, or RANSAC.\
+> 4. Validation: After estimating the fundamental matrix, it needs to be validated to ensure that it satisfies certain properties, such as rank 2 and epipolar constraints.\
+> 5. Application: Once the fundamental matrix is validated, it can be used for various applications, such as stereo rectification, stereo matching, and camera calibration.\
+
+>In summary, the fundamental matrix is a powerful tool in computer vision for describing the relationship between two views of a scene in a stereo camera setup. It can be derived using image point correspondences, normalization, and estimation techniques, and can be applied for various tasks in computer vision.
 
 ### 3. Derive and apply the essential matrix in computer vision
 > The pinhole camera parameters describe the geometric relationship between the world coordinate system and the camera coordinate system. These parameters include the intrinsic parameters, such as the focal length and principal point, and the extrinsic parameters, such as the camera orientation and position. The intrinsic parameters describe the mapping between the image plane and the world coordinate system, while the extrinsic parameters describe the location and orientation of the camera in the world.
